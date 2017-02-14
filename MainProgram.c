@@ -19,10 +19,15 @@ unsigned char sharp, distance, adc_reading;
 unsigned int value;
 float BATT_Voltage, BATT_V;
 
+
 //necessary variables for the Positioning
 volatile unsigned long int ShaftCountLeft = 0; //to keep track of left position encoder
 volatile unsigned long int ShaftCountRight = 0; //to keep track of right position encoder
 volatile unsigned int Degrees; //to accept angle in degrees for turning
+int alternatePathDelaytTime;
+int runThisCode;
+int stopped;
+int timerCount;
 
 //Function to configure the pins for motion
 void motion_pin_config (void){
