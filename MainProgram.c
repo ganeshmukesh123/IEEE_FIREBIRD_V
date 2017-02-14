@@ -24,6 +24,8 @@ float BATT_Voltage, BATT_V;
 volatile unsigned long int ShaftCountLeft = 0; //to keep track of left position encoder
 volatile unsigned long int ShaftCountRight = 0; //to keep track of right position encoder
 volatile unsigned int Degrees; //to accept angle in degrees for turning
+
+//necessary variables for the alternative path
 int alternatePathDelaytTime;
 int runThisCode;
 int stopped;
